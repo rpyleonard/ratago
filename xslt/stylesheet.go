@@ -360,6 +360,7 @@ func (style *Stylesheet) Process(doc *xml.XmlDocument, options StylesheetOptions
 	// reset anything required for re-use
 	output.Free()
 	log.Println("ratago - memory free")
+	runtime.GC()
 	return
 }
 
