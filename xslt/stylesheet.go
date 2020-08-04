@@ -7,7 +7,7 @@ import (
 	"path"
 	"strconv"
 	"strings"
-
+	"runtime"
 	"github.com/jbowtie/gokogiri/xml"
 	"github.com/jbowtie/gokogiri/xpath"
 )
