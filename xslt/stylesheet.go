@@ -3,12 +3,13 @@ package xslt
 import (
 	"container/list"
 	"fmt"
-	"github.com/jbowtie/gokogiri/xml"
-	"github.com/jbowtie/gokogiri/xpath"
 	"log"
 	"path"
 	"strconv"
 	"strings"
+
+	"github.com/jbowtie/gokogiri/xml"
+	"github.com/jbowtie/gokogiri/xpath"
 )
 
 const XSLT_NAMESPACE = "http://www.w3.org/1999/XSL/Transform"
@@ -357,6 +358,8 @@ func (style *Stylesheet) Process(doc *xml.XmlDocument, options StylesheetOptions
 
 	out, err = style.constructOutput(output, options)
 	// reset anything required for re-use
+	output.Free()
+	log.Println("ratago - memory free")
 	return
 }
 
