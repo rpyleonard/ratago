@@ -2,8 +2,8 @@ package xslt
 
 import (
 	"fmt"
-	"github.com/jbowtie/gokogiri/xml"
-	"github.com/jbowtie/gokogiri/xpath"
+	"github.com/rpyleonard/gokogiri/xml"
+	"github.com/rpyleonard/gokogiri/xpath"
 	"strings"
 )
 

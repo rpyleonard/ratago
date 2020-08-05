@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 	"runtime"
-	"github.com/jbowtie/gokogiri/xml"
-	"github.com/jbowtie/gokogiri/xpath"
+	"github.com/rpyleonard/gokogiri/xml"
+	"github.com/rpyleonard/gokogiri/xpath"
 )
 
 const XSLT_NAMESPACE = "http://www.w3.org/1999/XSL/Transform"
